@@ -1,6 +1,6 @@
 # hello-qt5
 
-## helloworld
+## audiodevice
 
 
 sudo apt-get install qtmultimedia5-dev

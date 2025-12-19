@@ -13,20 +13,7 @@ $ QT_LOGGING_RULES="*.debug=true" ./helloworld
 #include <QtCore/QCoreApplication>
 #include <QDebug>
 #include <QAudioDeviceInfo>
-
-QAudioDeviceInfo getAudioDevice(QString name) {
-  QAudioDeviceInfo device;
-  QList<QAudioDeviceInfo> devices =
-    QAudioDeviceInfo::availableDevices(QAudio::AudioInput);
-  for(int i = 0; i < devices.size(); ++i) {
-    qDebug() << "input Device name: " << devices.at(i).deviceName();
-    if(devices.at(i).deviceName() == name) {
-      device = devices.at(i);
-      break;
-    }
-  }
-  return device;
-}
+#include "audiodeviceutils.h"
 
 int main(int argc, char *argv[])
 {
