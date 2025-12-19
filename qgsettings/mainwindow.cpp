@@ -49,6 +49,8 @@ void MainWindow::onButtonClicked() {
 }
 
 void MainWindow::onGSettingValueChanged(const QString &key) {
+    qDebug() << "GSetting value changed:" << key;
+
     // Check if the changed key is the one we are interested in
     if (key == "isEnabled") {
         qDebug() << "GSetting 'is-enabled' value changed.";

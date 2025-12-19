@@ -22,6 +22,9 @@ private slots:
 private:
     QPushButton *m_toggleButton;
     QGSettings *m_gsettings;
+
+    // Expose m_toggleButton for testing
+    friend class TestMainWindow;
 };
 
 #endif // MAINWINDOW_H
