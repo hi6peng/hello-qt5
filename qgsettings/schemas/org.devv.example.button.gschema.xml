@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.devv.example.button" path="/org/devv/example/button/">
+    <key name="is-enabled" type="b">
+      <default>false</default>
+      <summary>Is the feature enabled?</summary>
+      <description>
+        A boolean value indicating whether a specific feature is enabled or disabled.
+      </description>
+    </key>
+  </schema>
+</schemalist>
