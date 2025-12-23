@@ -1,5 +1,10 @@
 # hello-qt5
 
+##  qapplication
+
+cmake .
+
+
 ## audiodevice
 
 
